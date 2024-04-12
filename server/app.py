@@ -18,7 +18,7 @@ def count(num):
     numbers = [str(i) for i in range(num)]
     return '\n'.join(numbers)
 
-@app.route('/math/<float:num1>/<operation>/<float:num2>')
+@app.route('/math/<int:num1>/<operation>/<int:num2>')
 def math(num1, operation, num2):
     result = None
     if operation == '+':
